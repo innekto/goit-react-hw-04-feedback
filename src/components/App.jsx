@@ -15,13 +15,13 @@ const App = () => {
   const handleFeedback = type => {
     switch (type) {
       case 'good':
-        setGoodFeedback(prevGoodFeedback => prevGoodFeedback + 1);
+        setGoodFeedback(prevGood => prevGood + 1);
         break;
       case 'neutral':
-        setNeutralFeedback(prevNeutralFeedback => prevNeutralFeedback + 1);
+        setNeutralFeedback(prevNeutral => prevNeutral + 1);
         break;
       case 'bad':
-        setBadFeedback(prevBadFeedback => prevBadFeedback + 1);
+        setBadFeedback(prevBad => prevBad + 1);
         break;
       default:
         console.error('Invalid feedback type:', type);
